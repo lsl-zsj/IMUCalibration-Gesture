@@ -46,6 +46,7 @@ Kg=[ a(7) ,  0   ,  0  ;...
     data=rotation{i};
     g_start=Ta*Ka*(data(1,2:4)'+Ba);
     g_end=Ta*Ka*(data(end,2:4)'+Ba);
+    % note that the initial quaternion should be [1 0 0 0]
     Q(:,1)=[1;0;0;0];
     for j=2:size(data,1)
         gyro0=Tg*Kg*(data(j-1,5:7)'+Bg);

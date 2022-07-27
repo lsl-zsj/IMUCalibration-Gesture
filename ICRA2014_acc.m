@@ -7,8 +7,8 @@ if nargin<2
    a0=[0,0,0,0.0048,0.0048,0.0048,0,0,0];
 end
 
-B=fix_point(:,1:3)-ones(size(fix_point,1),1)*(mean(fix_point(:,1:3),1));
-
+% B=fix_point(:,1:3)-ones(size(fix_point,1),1)*(mean(fix_point(:,1:3),1));
+B=fix_point(:,1:3);
 % options=optimset('TolX',1e-6,'TolFun',1e-6,'Algorithm','Levenberg-Marquardt',...
 %  'Display','iter','MaxIter',50);
 % 

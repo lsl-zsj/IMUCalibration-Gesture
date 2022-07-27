@@ -12,6 +12,7 @@ function [Ta,Ka,Ba,Tg,Kg,Bg,Tm2a,Bm,Vm,mag_strength]=ImuCalibration_Gesture(data
 
 [Ta,Ka,Ba]=ICRA2014_acc(fix_point);
 
+% calculate gyroscope drift using t_wait
 Bg=-mean(fix_point(:,4:6),1)';
 
 n=size(rotation,1);
